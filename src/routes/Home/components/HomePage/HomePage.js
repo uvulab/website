@@ -28,7 +28,7 @@ function HomePage() {
             </Grid.Column>
             <Grid.Column width={8} textAlign='center'>
               <p>
-                asadovnik@utk.edu <br />{' '}
+                <a href='mailto:asadovnik@utk.edu'>asadovnik@utk.edu</a> <br />{' '}
                 <a href='tel:865-974-3076'>865-974-3076</a> <br /> 352 Min H.
                 Kao Bldg.
               </p>

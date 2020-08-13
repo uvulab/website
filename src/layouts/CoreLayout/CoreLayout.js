@@ -14,7 +14,8 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import {
   ABOUT_PATH,
   HOME_PATH,
-  TEACHING_PATH,
+  PEOPLE_PATH,
+  PROJECTS_PATH,
   PUBLICATIONS_PATH
 } from 'constants/paths'
 import { Background } from 'static/background'
@@ -79,17 +80,24 @@ class DesktopContainer extends Component {
                 </Menu.Item>
                 <Menu.Item
                   as={Link}
+                  to={PEOPLE_PATH}
+                  active={path === PEOPLE_PATH}
+                >
+                  People
+                </Menu.Item>
+                <Menu.Item
+                  as={Link}
+                  to={PROJECTS_PATH}
+                  active={path === PROJECTS_PATH}
+                >
+                  Projects
+                </Menu.Item>
+                <Menu.Item
+                  as={Link}
                   to={PUBLICATIONS_PATH}
                   active={path === PUBLICATIONS_PATH}
                 >
                   Publications
-                </Menu.Item>
-                <Menu.Item
-                  as={Link}
-                  to={TEACHING_PATH}
-                  active={path === TEACHING_PATH}
-                >
-                  Teaching
                 </Menu.Item>
               </Container>
             </Menu>
@@ -149,19 +157,27 @@ class MobileContainer extends Component {
           </Menu.Item>
           <Menu.Item
             as={Link}
+            to={PEOPLE_PATH}
+            active={path === PEOPLE_PATH}
+            onClick={this.handleSidebarHide}
+          >
+            People
+          </Menu.Item>
+          <Menu.Item
+            as={Link}
+            to={PROJECTS_PATH}
+            active={path === PROJECTS_PATH}
+            onClick={this.handleSidebarHide}
+          >
+            Projects
+          </Menu.Item>
+          <Menu.Item
+            as={Link}
             to={PUBLICATIONS_PATH}
             active={path === PUBLICATIONS_PATH}
             onClick={this.handleSidebarHide}
           >
             Publications
-          </Menu.Item>
-          <Menu.Item
-            as={Link}
-            to={TEACHING_PATH}
-            active={path === TEACHING_PATH}
-            onClick={this.handleSidebarHide}
-          >
-            Teaching
           </Menu.Item>
         </Sidebar>
 

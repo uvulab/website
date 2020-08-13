@@ -1,4 +1,5 @@
 export const HOME_PATH = '/'
 export const ABOUT_PATH = '/about'
+export const PEOPLE_PATH = '/people'
+export const PROJECTS_PATH = '/projects'
 export const PUBLICATIONS_PATH = '/publications'
-export const TEACHING_PATH = '/teaching'
