@@ -2,16 +2,10 @@ import React from 'react'
 import { Card, Image } from 'semantic-ui-react'
 
 function Person({ person }) {
-  const { name, meta, description, extra } = person
+  const { img, name, meta, description, extra } = person
   return (
     <Card style={{ textAlign: 'center', margin: '1em auto' }}>
-      {/*
-      <Image
-        src='https://www.eecs.utk.edu/wp-content/uploads/2018/07/Sadovnik_EECS.jpg'
-        wrapped
-        ui={false}
-      />
-      */}
+      {img && <Image src={img} wrapped ui={false} />}
       <Card.Content>
         <Card.Header>{name}</Card.Header>
         <Card.Meta>

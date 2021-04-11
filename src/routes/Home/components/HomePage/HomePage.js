@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Header, Image, Grid } from 'semantic-ui-react'
 import Scrollbar from 'react-scrollbars-custom'
-import amir from 'assets/amir.jpg'
+import amir from 'assets/amir_portrait.jpg'
 
 function HomePage() {
   return (

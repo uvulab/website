@@ -1,8 +1,16 @@
 import React, { Fragment } from 'react'
+import AmirPhoto from 'assets/amir_profile.jpg'
+import FabianPhoto from 'assets/fabian_profile.jpg'
+import HenryPhoto from 'assets/henry_profile.jpg'
+import JamesPhoto from 'assets/james_profile.jpg'
+import JerryPhoto from 'assets/jerry.jpg'
+import NataliePhoto from 'assets/natalie.jpg'
+import SaiPhoto from 'assets/sai.jpg'
 
 const people = [
   {
     type: 'Professor',
+    img: AmirPhoto,
     name: 'Amir Sadovnik',
     meta: 'Assistant Professor',
     description: (
@@ -23,6 +31,7 @@ const people = [
   },
   {
     type: 'PhD',
+    img: JerryPhoto,
     name: 'Jerry Duncan',
     meta: (
       <Fragment>
@@ -44,6 +53,7 @@ const people = [
   },
   {
     type: 'PhD',
+    img: FabianPhoto,
     name: 'Fabian Fallas',
     meta: (
       <Fragment>
@@ -65,6 +75,7 @@ const people = [
   },
   {
     type: 'PhD',
+    img: JamesPhoto,
     name: 'James Senter',
     meta: (
       <Fragment>
@@ -86,6 +97,7 @@ const people = [
   },
   {
     type: 'PhD',
+    img: undefined,
     name: 'Taher Naderi',
     meta: (
       <Fragment>
@@ -107,6 +119,7 @@ const people = [
   },
   {
     type: 'Undergraduate',
+    img: HenryPhoto,
     name: 'Henry Eigen',
     meta: <Fragment>Junior</Fragment>,
     description: (
@@ -124,6 +137,7 @@ const people = [
   },
   {
     type: 'Undergraduate',
+    img: SaiPhoto,
     name: 'Sai Thatigotla',
     meta: <Fragment>Junior</Fragment>,
     description: (
@@ -141,6 +155,7 @@ const people = [
   },
   {
     type: 'Graduated',
+    img: NataliePhoto,
     name: 'Natalie Bogda',
     meta: <Fragment>Master's Degree</Fragment>,
     description: undefined,
